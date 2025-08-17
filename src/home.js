@@ -1,5 +1,5 @@
 import "./style.css"
-
+import me from "./assets/WhatsApp Image 2025-07-17 at 4.43.12 AM.jpeg"
 //create home page functions
 function createHeader(){
     let headerTag = document.createElement("header");
@@ -37,6 +37,7 @@ function createHeroSection(){
     heroDiv.appendChild(heroText);
     heroText.style.background = "transparent"
     
+    
 }
 
 function createSection(){
@@ -47,7 +48,7 @@ function createSection(){
     let div1 = document.createElement('div');
     div1.className = "div1";
     div1.innerHTML = 
-    "Meet Mr. Ranger,<br>a culinary artist in imagination, with a passion for flavors.<br>He transforms simple ingredients into unforgettable dishes.";
+    "Meet Mr. Ranger,<br>a skilled programmer, with a passion for computer science.<br>He transforms simple ideas into reality using code.";
     div1.style.color = "white";
     div1.style.backgroundColor = "black";
     div1.style.lineHeight="1.5"
@@ -58,6 +59,11 @@ function createSection(){
     div2.style.backgroundColor = "black";
     section.appendChild(div2);
     let image = document.createElement('img');
+    image.src = me;
+    image.className = "my-image";
+    section.appendChild(div2);
+    div2.appendChild(image);
+
     
 
 }
