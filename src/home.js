@@ -39,4 +39,27 @@ function createHeroSection(){
     
 }
 
-export {createHeroSection, createHeader}
+function createSection(){
+    let section = document.createElement('section');
+    section.className = "section2";
+    document.body.appendChild(section);
+    //creating div1
+    let div1 = document.createElement('div');
+    div1.className = "div1";
+    div1.innerHTML = 
+    "Meet Mr. Ranger,<br>a culinary artist in imagination, with a passion for flavors.<br>He transforms simple ingredients into unforgettable dishes.";
+    div1.style.color = "white";
+    div1.style.backgroundColor = "black";
+    div1.style.lineHeight="1.5"
+    section.appendChild(div1);
+    //creating div2
+    let div2 = document.createElement('div');
+    div2.className="div2";
+    div2.style.backgroundColor = "black";
+    section.appendChild(div2);
+    let image = document.createElement('img');
+    
+
+}
+
+export {createHeroSection, createHeader, createSection}

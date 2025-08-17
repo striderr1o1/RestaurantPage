@@ -36,5 +36,30 @@ header .buttons{
     background-size: cover;
 }
 .hero-text{
-    
+
+}
+.section2{
+    height: 600px;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.div1{
+    height: 600px;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    padding: 0 10px 0 10px;
+}
+.div2{
+    height: 600px;
+    width: 50%;
+    text-align: center;
 }
