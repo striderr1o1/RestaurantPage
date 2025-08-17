@@ -1,7 +1,24 @@
 import "./style.css"
 
 //create home page functions
+function createHeader(){
+    let headerTag = document.createElement("header");
+    headerTag.className="header-div";
+    document.body.appendChild(headerTag);
+    
 
+    let navTag = document.createElement('nav');
+    headerTag.appendChild(navTag);
+
+    let classes = ["buttons homebutton", "buttons menubutton", "buttons aboutbutton"];
+    let texts = ["Home", "Menu", "About"];
+    for(let i = 0; i < classes.length; i++){
+        let button = document.createElement('button');
+        button.className = classes[i];
+        button.textContent = texts[i];
+        navTag.appendChild(button);
+    }
+}
 
 function createHeroSection(){
     let heroDiv = document.createElement("div");
@@ -22,4 +39,4 @@ function createHeroSection(){
     
 }
 
-export {createHeroSection}
+export {createHeroSection, createHeader}
