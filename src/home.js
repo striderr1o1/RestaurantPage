@@ -26,10 +26,14 @@ function createHeroSection(){
     document.body.appendChild(heroDiv);
     let heroText = document.createElement('p');
     heroText.className = "hero-text";
-    heroText.innerHTML = "If Yoh ghot Money<br>Taste iz on Us";
+    heroText.innerHTML = ">>-The-Striding-Ranger-><br>The Best Inn in Town";
+    heroText.style.lineHeight = "1";
+    heroText.style.letterSpacing = "1px"
     heroText.style.textAlign = "center";
     heroText.style.color ="white";
+    heroText.style.fontWeight = "none"
     heroText.style.fontSize= "5rem";
+    heroText.style.fontFamily = "monospace"
     heroDiv.style.display = "flex";
     heroDiv.style.flexDirection = "row";
     heroDiv.style.justifyContent="center";
@@ -64,8 +68,38 @@ function createSection(){
     section.appendChild(div2);
     div2.appendChild(image);
 
-    
-
 }
 
-export {createHeroSection, createHeader, createSection}
+function createFooter(){
+    let footer = document.createElement('footer');
+    footer.className = "footer";
+    document.body.appendChild(footer);
+    let heading = document.createElement('h1');
+    heading.className = "footerHeading";
+    heading.textContent = "Contact"
+    footer.appendChild(heading)
+    
+    let div = document.createElement('div');
+    div.className = "footerDiv";
+    footer.appendChild(div);
+    let links = ["https://github.com/striderr1o1", "https://linkedin.com/in/mustafanoman"];
+    let names = ["github", "linkedin"];
+    let classes = ["links gh", "links lk"]
+    for(let i = 0; i < links.length; i++){
+        let anchtag = document.createElement('a');
+        anchtag.className = classes[i];
+        anchtag.href = links[i];
+        anchtag.textContent = names[i];
+        
+        div.appendChild(anchtag);
+    }
+}
+
+function createHomePage(){
+    createHeader();
+    createHeroSection();
+    createSection();
+    createFooter();
+}
+
+export default createHomePage

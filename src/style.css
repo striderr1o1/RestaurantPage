@@ -73,3 +73,35 @@ header .buttons{
     height: 400px;
     border-radius: 30px;
 }
+.footer{
+    height: 300px;
+    width: 100vw;
+    background-color: black;
+}
+.footerHeading{
+    text-align: center;
+    font-weight: normal;
+    color: white;
+    background-color: transparent;
+    font-size: 3rem;
+    text-decoration: underline;
+}
+.footerDiv{
+    height: 220px;
+    width: 100vw;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.links{
+    color: white;
+    background-color: transparent;
+    font-size: 2rem;
+    text-decoration: none;
+    
+}
+.gh{
+    margin-bottom: 30px;
+}
