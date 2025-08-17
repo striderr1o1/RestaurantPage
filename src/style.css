@@ -1,0 +1,40 @@
+*{
+    background-color: rgb(93, 93, 93);
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: rgb(0, 0, 0);
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav{
+    background-color: rgb(0, 0, 0);
+}
+header .buttons{
+    margin: 0 10px 0 10px;
+    border-radius: 10px;
+    padding: 5px;
+    color: white;
+    background-color: rgb(40, 28, 28);
+    transition: 0.3s ease;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.buttons:hover{
+    background-color: black;
+    color: white;
+    transition: 0.3s ease;
+}
+.hero-div{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("ChatGPT\ Image\ Aug\ 17\,\ 2025\,\ 09_21_00\ PM\(1\).png");
+    background-position: center;
+    background-size: cover;
+}
+.hero-text{
+    
+}
