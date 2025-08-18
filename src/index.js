@@ -1,4 +1,5 @@
 import createHomePage from "./home.js";
+import MenuPage from "./menu.js";
 import { createHeader, createFooter } from "./home.js";
 const homeButton = document.querySelector(".homebutton");
 const menuButton = document.querySelector(".menubutton");
@@ -15,12 +16,19 @@ document.addEventListener("DOMContentLoaded", function(){
 
 homeButton.addEventListener("click", function(){
     console.log("home")
+    let parent = document.querySelector('.ParentDiv');
+    parent.innerHTML = "";
+    document.body.removeChild(parent);
+    console.log("home")
     createHomePage();
 })
 
 menuButton.addEventListener('click', function(){
     console.log("menu")
-    
-    createHeader();
-    createFooter();
+    let parent = document.querySelector('.ParentDiv');
+    parent.innerHTML = "";
+    document.body.removeChild(parent);
+    console.log("parent erased")
+    MenuPage();
 })
+// need to implement menuButton logic

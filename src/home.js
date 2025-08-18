@@ -1,4 +1,4 @@
-import "./style.css"
+import "./styles/style.css"
 import me from "./assets/WhatsApp Image 2025-07-17 at 4.43.12 AM.jpeg"
 //create home page functions
 function createHeader(){
@@ -20,10 +20,10 @@ function createHeader(){
     }
 }
 
-function createHeroSection(){
+function createHeroSection(parentdiv){
     let heroDiv = document.createElement("div");
     heroDiv.className = "hero-div";
-    document.body.appendChild(heroDiv);
+    parentdiv.appendChild(heroDiv);
     let heroText = document.createElement('p');
     heroText.className = "hero-text";
     heroText.innerHTML = ">>-The-Striding-Ranger-><br>The Best Inn in Town";
@@ -44,10 +44,10 @@ function createHeroSection(){
     
 }
 
-function createSection(){
+function createSection(parentdiv){
     let section = document.createElement('section');
     section.className = "section2";
-    document.body.appendChild(section);
+    parentdiv.appendChild(section);
     //creating div1
     let div1 = document.createElement('div');
     div1.className = "div1";
@@ -70,10 +70,10 @@ function createSection(){
 
 }
 
-function createFooter(){
+function createFooter(parentdiv){
     let footer = document.createElement('footer');
     footer.className = "footer";
-    document.body.appendChild(footer);
+    parentdiv.appendChild(footer);
     let heading = document.createElement('h1');
     heading.className = "footerHeading";
     heading.textContent = "Contact"
@@ -96,10 +96,15 @@ function createFooter(){
 }
 
 function createHomePage(){
+    let ParentDiv = document.createElement('div');
+    document.body.appendChild(ParentDiv);
     // createHeader();
-    createHeroSection();
-    createSection();
-    createFooter();
+    createHeroSection(ParentDiv);
+    createSection(ParentDiv);
+    
+    ParentDiv.className = "ParentDiv";
+    createFooter(ParentDiv);
+    
 }
 
 export default createHomePage
