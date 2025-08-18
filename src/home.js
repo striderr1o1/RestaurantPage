@@ -96,7 +96,7 @@ function createFooter(){
 }
 
 function createHomePage(){
-    createHeader();
+    // createHeader();
     createHeroSection();
     createSection();
     createFooter();
