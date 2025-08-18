@@ -6,7 +6,7 @@ A modern, single-page restaurant website built with JavaScript and webpack. This
 - Dynamic creation of header, hero section, content, and footer using JavaScript
 - Modular code structure with ES6 imports/exports
 - Asset management for images and styles via webpack
-- Responsive design with custom CSS
+- custom CSS styling
 - Easy navigation between Home, Menu, and About sections
 
 ## Getting Started
