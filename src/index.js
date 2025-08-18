@@ -15,20 +15,22 @@ document.addEventListener("DOMContentLoaded", function(){
 })
 
 homeButton.addEventListener("click", function(){
-    console.log("home")
     let parent = document.querySelector('.ParentDiv');
     parent.innerHTML = "";
     document.body.removeChild(parent);
-    console.log("home")
     createHomePage();
 })
 
 menuButton.addEventListener('click', function(){
-    console.log("menu")
     let parent = document.querySelector('.ParentDiv');
     parent.innerHTML = "";
     document.body.removeChild(parent);
-    console.log("parent erased")
     MenuPage();
 })
-// need to implement menuButton logic
+
+aboutButton.addEventListener('click', function(){
+    let parent = document.querySelector('.ParentDiv');
+    parent.innerHTML = "";
+    document.body.removeChild(parent);
+    
+})
