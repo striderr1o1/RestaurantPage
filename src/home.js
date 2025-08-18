@@ -103,3 +103,4 @@ function createHomePage(){
 }
 
 export default createHomePage
+export {createHeader, createFooter}

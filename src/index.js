@@ -15,4 +15,3 @@ homeButton.addEventListener("click", function(){
     document.body.innerHTML = "";
     createHomePage();
 })
-//comment
