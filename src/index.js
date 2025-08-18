@@ -1,6 +1,8 @@
 import createHomePage from "./home.js";
 import MenuPage from "./menu.js";
 import { createHeader, createFooter } from "./home.js";
+import aboutPage from "./about.js";
+
 const homeButton = document.querySelector(".homebutton");
 const menuButton = document.querySelector(".menubutton");
 const aboutButton = document.querySelector(".aboutbutton");
@@ -32,5 +34,5 @@ aboutButton.addEventListener('click', function(){
     let parent = document.querySelector('.ParentDiv');
     parent.innerHTML = "";
     document.body.removeChild(parent);
-    
+    aboutPage();
 })
